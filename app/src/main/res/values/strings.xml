@@ -13,5 +13,7 @@
     <string name="insert_error">При добавлении произошла ошибка</string>
     <string name="insert_success">Запись успешно произведена</string>
     <string name="user_not_check_quest">Введите логин и пароль, проверьте задание</string>
+    <string name="navigation_drawer_open">Навигация открыта</string>
+    <string name="navigation_drawer_close">Навигация закрыта</string>
 
 </resources>

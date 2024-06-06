@@ -84,8 +84,11 @@ public class MainActivity extends AppCompatActivity {
                                         jsonObject.getString("title"),
                                         jsonObject.getString("task"),
                                         jsonObject.getString("variant"));
-
-                                value = jsonObject.getString("data");
+                                try {
+                                    value = jsonObject.getString("data");
+                                }catch (Exception e){
+                                    Log.e("Data_Exception","Нет даты");
+                                }
 //                                valueDescription = jsonObject.getString("description");
                                 textView.setText(message);
                                 k++;

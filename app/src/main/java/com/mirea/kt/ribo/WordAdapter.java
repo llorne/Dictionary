@@ -69,9 +69,6 @@ public class WordAdapter extends RecyclerView.Adapter<WordAdapter.ViewHolder> {
         }
     }
 
-    public WordAdapter(MyAppSQLiteHelper sqLiteHelper) {
-        this.sqLiteHelper=sqLiteHelper;
-    }
 
     @NonNull
     @Override
@@ -89,26 +86,11 @@ public class WordAdapter extends RecyclerView.Adapter<WordAdapter.ViewHolder> {
 
         Word word = words.get(position);
 
-//        readCursorData(word,holder);
-
-
-//        WordMeaning meaning = meanings.get(position);
         dbManager = new DBManager(new MyAppSQLiteHelper(holder.itemView.getContext(), "doctors.db", null, 1));
 
         holder.nameView.setText(String.format(word.getWordName()));
         ArrayList<Word> words = new DBManager(new MyAppSQLiteHelper(holder.itemView.getContext(), "doctors.db", null, 1)).loadAllWordFromDatabase();
 
-//        if (word.isFavorite()) {
-//            holder.imageButton.setImageResource(R.drawable.ic_action_star_border);
-//            dbManager.updateWordFavoriteStatus(word, word.isFavorite());
-//        }
-//        for (Word wordi : words) {
-//            if (wordi.isFavorite()) {
-//                holder.imageButton.setImageResource(R.drawable.ic_action_star);
-//            } else {
-//                holder.imageButton.setImageResource(R.drawable.ic_action_star_border);
-//            }
-//        }
 
         holder.imageButton.setOnClickListener(v -> {
             Log.d("IMAGE_BUTTON_CLICK", "Клик по слову: " + word.getWordName());
@@ -178,25 +160,7 @@ public class WordAdapter extends RecyclerView.Adapter<WordAdapter.ViewHolder> {
             holder.imageButton.setImageResource(R.drawable.ic_action_star_border);
         }
 
-//        Intent intent
-//        for (Word wordsFV:words){
-//            if(wordsFV==intent.get)
-//            holder.imageButto
-//        }
 
-//        if (counter!=words.size()) {
-//            for (Word wordsFv : words) {
-//                if (holder.imageButton != null) {
-//                    if (wordsFv.isFavorite()) {
-//                        holder.imageButton.setImageResource(R.drawable.ic_action_star);
-//                        counter++;
-//                    } else {
-//                        holder.imageButton.setImageResource(R.drawable.ic_action_star_border);
-//                        counter++;
-//                    }
-//                }
-//            }
-//        }
     }
         private void readCursorData (Word word, ViewHolder viewHolder){
             SQLiteDatabase db =sqLiteHelper.getReadableDatabase();
