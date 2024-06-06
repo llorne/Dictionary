@@ -8,4 +8,9 @@
         android:id="@+id/nav_terms"
         android:icon="@drawable/ic_terms"
         android:title="Terms Dictionary" />
+
+    <item
+        android:id="@+id/nav_favorite"
+        android:icon="@drawable/baseline_star_24"
+        android:title="Favorite"/>
 </menu>

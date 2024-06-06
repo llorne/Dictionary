@@ -20,7 +20,7 @@ public class DBManager {
         ContentValues cv = new ContentValues();
         cv.put("WordName", word.getWordName());
         cv.put("WordMeaning", wordMeaning.getWordMeaning());
-        cv.put("isFavorite", word.isFavorite() ? 1 : 0 ); // после () было ? 1 : 0
+        cv.put("isFavorite", word.isFavorite() ? 1 : 0 );
 
         long rowId = db.insert("TABLE_WORDS", null, cv);
 

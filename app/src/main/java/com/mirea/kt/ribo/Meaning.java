@@ -58,6 +58,10 @@ public class Meaning extends AppCompatActivity {
                     Intent switcher = new Intent(Meaning.this, TermsDictionary.class);
                     startActivity(switcher);
                 }
+                else if (id == R.id.nav_favorite){
+                    Intent switcher = new Intent(Meaning.this,FavoriteShow.class);
+                    startActivity(switcher);
+                }
                 drawerLayout.closeDrawer(navigationView);
                 return true;
             }

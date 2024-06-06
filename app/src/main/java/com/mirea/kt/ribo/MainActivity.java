@@ -89,17 +89,15 @@ public class MainActivity extends AppCompatActivity {
                                 }catch (Exception e){
                                     Log.e("Data_Exception","Нет даты");
                                 }
-//                                valueDescription = jsonObject.getString("description");
                                 textView.setText(message);
                                 k++;
-                                Log.e("myTask",jsonObject.toString());
-
-
+                                Log.i("myTask",jsonObject.toString());
                             } else if (result == -1) {
                                 Toast.makeText(getApplicationContext(), "Сервер не отвечает", Toast.LENGTH_LONG).show();
                             }
                         } catch (JSONException | NullPointerException exception) {
                             exception.printStackTrace();
+                            Log.e("Json_Exception","Json exception"+exception);
                         }
                     }
 
