@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Doctor Dictionary</string>
+    <string name="logo">SULTANOV</string>
+    <string name="hint_user_field">Введите логин</string>
+    <string name="hint_user_password">Введите пароль</string>
+    <string name="main_btn">Узнать задание</string>
+    <string name="start">Запуск программы</string>
+    <string name="no_user_input">Введите текст</string>
+    <string name="add">Добавить</string>
+    <string name="next">Следующее</string>
+    <string name="back">Назад</string>
+    <string name="incorrect_value">Вы ввели некорректное значение</string>
+    <string name="insert_error">При добавлении произошла ошибка</string>
+    <string name="insert_success">Запись успешно произведена</string>
+    <string name="user_not_check_quest">Введите логин и пароль, проверьте задание</string>
+
+</resources>

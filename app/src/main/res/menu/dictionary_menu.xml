@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/ic_search_black_24dp"
+        android:title="Search"
+        app:actionViewClass="android.widget.SearchView"
+        app:showAsAction="ifRoom|collapseActionView"
+        />
+<!--    <item-->
+<!--        android:id="@+id/bar_delete"-->
+<!--        android:icon="@drawable/baseline_cancel_24"-->
+<!--        android:title="Удалить"-->
+<!--        app:actionViewClass="android.widget.SearchView"-->
+<!--        app:showAsAction="never" />-->
+    <item
+        android:id="@+id/action_favorite"
+        android:title="Избранное"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_add"
+        android:icon="@drawable/baseline_add_circle_outline_24"
+        android:title="Добавить"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_update"
+        android:title="Обновить"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_exit"
+        android:title="Выйти"
+        app:showAsAction="never" />
+
+
+</menu>
